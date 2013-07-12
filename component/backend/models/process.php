@@ -418,7 +418,10 @@ ENDTEXT;
 			'hits'			=> 0,
 			'featured'		=> 0,
 			'language'		=> '*',
-			'state'			=> $state
+			'state'			=> $state,
+			'metadata'      => array(
+				"tags"=>json_encode($alias)
+			)
 		);
 		
 		return $data;
